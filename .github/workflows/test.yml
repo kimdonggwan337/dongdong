@@ -1,0 +1,19 @@
+
+name: action test
+
+on: 
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:    
+      # - uses: actions/checkout@v3
+      - name: Run pwd
+        run: pwd
+  
+      - name: ls -al
+        run: ls -al
+         
